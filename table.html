@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .tb01 {
+            border-top: solid black 1px;
+            border-bottom: solid black 1px;
+            width: 100%;
+            border-spacing: 0px;
+            border-collapse: collapse;
+            max-width: 860px;
+            table-layout: fixed;
+        }
+
+        .tb01 th,
+        .tb01 td {
+            border: dotted black 1px;
+        }
+
+        .tb01 tr th:first-child,
+        .tb01 tr td:first-child {
+            border-left: none;
+        }
+
+        .tb01 tr th:last-child,
+        .tb01 tr td:last-child {
+            border-right: none;
+        }
+
+        .tb01 th {
+            background-color: #fffaf0;
+        }
+
+        .tb01 p {
+            padding: 2px 2px 2px 2px;
+        }
+
+        .havingTwoCols th {
+            width: 25%;
+            text-align: center;
+            border-right: none !important;
+        }
+
+        .havingTwoCols td {
+            width: 75%;
+            text-align: left;
+            border-left: none !important;
+        }
+
+        .havingMoreCols th,
+        td {
+            text-align: center;
+        }
+
+        .havingMoreCols th:first-child,
+        .havingMoreCols td.first-col {
+            border-right: solid black 1px !important;
+        }
+    </style>
+    <table class="tb01">
+        <tr class="havingMoreCols">
+            <th style="width: 80px; text-align: center">
+                <p>屋号</p>
+            </th>
+            <th style="width: 30px; text-align: center">
+                <p>業態</p>
+            </th>
+            <th style="width: 80px; text-align: center">
+                <p>一言</p>
+            </th>
+            <th style="width: 50px; text-align: center">
+                <p>お問合せ先</p>
+            </th>
+            <th style="width: 50px; text-align: center">
+                <p>ホームページ</p>
+            </th>
+            <th style="width: 30px; text-align: center">
+                <p>小売可否</p>
+            </th>
+        </tr>
+        <tr class="havingMoreCols">
+            <td style="text-align: center" class="first-col">
+                <p>AAA</p>
+            </td>
+            <td style="text-align: center">
+                <p>小売</p>
+            </td>
+            <td style="text-align: center">
+                <p>あああ</p>
+            </td>
+            <td style="text-align: center">
+                <p>xxx@xxx.com</p>
+            </td>
+            <td style="text-align: center">
+                <p>xxx.com</p>
+            </td>
+            <td style="text-align: center">
+                <p>◯</p>
+            </td>
+        </tr>
+        <tr class="havingMoreCols">
+            <td style="text-align: center" class="first-col">
+                <p>BBB</p>
+            </td>
+            <td style="text-align: center">
+                <p>卸</p>
+            </td>
+            <td style="text-align: center">
+                <p>いいい</p>
+            </td>
+            <td style="text-align: center">
+                <p>xxx@xxx.com</p>
+            </td>
+            <td style="text-align: center">
+                <p>xxx.com</p>
+            </td>
+            <td style="text-align: center">
+                <p>◯</p>
+            </td>
+        </tr>
+        <tr class="havingMoreCols">
+            <td style="text-align: center" class="first-col">
+                <p>CCC</p>
+            </td>
+            <td style="text-align: center">
+                <p>生産</p>
+            </td>
+            <td style="text-align: center">
+                <p>ううう</p>
+            </td>
+            <td style="text-align: center">
+                <p>xxx@xxx.com</p>
+            </td>
+            <td style="text-align: center">
+                <p>xxx.com</p>
+            </td>
+            <td style="text-align: center">
+                <p>×</p>
+            </td>
+        </tr>
+    </table>
+    <script src="table.js"></script>
+</body>
+
+</html>
